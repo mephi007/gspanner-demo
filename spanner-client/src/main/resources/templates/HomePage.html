@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reservation</title>
+    <meta charset="UTF-8">
+    <script>
+    function callTime(){
+        var dt = new Date();
+        var datetime = new Date().getHours()+1;
+        document.getElementById('date-time').innerHTML=dt;
+    }
+    </script>
+</head>
+<body onLoad="callTime();">
+<div align="center">
+<h1>Welcome!</h1>
+<p><span id='date-time'></span>.</p>
+<a href="/search">Search Reservation</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/addreservation">Create Reservation</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reservation</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div align="center">
+<h1>Sorry. You have already reserved for the day!</h1>
+
+<p th:text="'Apt Number: ' + ${reservation.aptId}"></p>
+<a href="/search">Search Reservation</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/addreservation">Create Reservation</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</div>
+</body>
+</html>

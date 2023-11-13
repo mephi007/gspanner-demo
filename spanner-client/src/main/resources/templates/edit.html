@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Reservation</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div align="center">
+<h1>Edit</h1>
+<form action="#" th:action="@{/editreservation}" th:object="${reservation}" method="put">
+   
+<p th:text="'Apt Number: ' + ${reservation.aptId}" ></p>
+ <p>
+ Hour: <input type="text" th:field="*{aptId}">
+ </p>
+ <p>
+ Player Count: <input type="text" th:field="*{playerCount}">
+ </p>
+
+ <p>
+        <input type="submit" value="Submit" style="background-color:red; color:white;"/> <input type="reset" value="Reset" style="background-color:blue; color:white;">
+    </p>
+
+<a href="/searchReservation">Search Another Reservation</a>
+
+</div>
+</form>
+</body>
+</html>
